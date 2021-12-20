@@ -6,7 +6,7 @@ import AdmZip from "adm-zip";
 import axios from "axios";
 import { AppConfig } from "@mfe-frameworks/config";
 
-const REPO = { owner: "marcelovicentegc", repo: "microfrontend-framework" };
+const REPO = { owner: "micro-frontend-frameworks", repo: "nextjs-build-time-integration" };
 const ALLOWED_PATHS = ["components/", "pages/api/", "pages/"] as const;
 const FORBIDDEN_ENTRIES = ["/_app.tsx"];
 const RELATIVE_IMPORT_PATHS = ["../components/"];
@@ -14,7 +14,7 @@ const ENTRY_POINTS = {
   ITEMS: "[ITEMS ENTRY-POINT]",
   REWRITES: "[REWRITES ENTRY-POINT]",
 };
-const EXAMPLES_BASE_PATH = "nextjs-build-time-integration/examples";
+const EXAMPLES_BASE_PATH = "examples";
 
 type AllowedPaths = typeof ALLOWED_PATHS[number];
 
